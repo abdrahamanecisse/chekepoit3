@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant cisse</title>
+    <!-- Lien vers Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      /* Styles personnalisés */
+      .hero {
+        background-image: url("https://via.placeholder.com/1200x600.png?text=Plat+Delicieux"); /* Image de fond */
+        background-size: cover;
+        background-position: center;
+        height: 400px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+      }
+      .menu-item img {
+        width: 100%;
+        height: auto;
+      }
+      footer {
+        background-color: #333;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+      footer .social-icons a {
+        margin: 0 10px;
+        color: white;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Section en tête: Barre de navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Restaurant cisse</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Accueil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Menu</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">À propos de nous</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Section Héros -->
+    <section class="hero">
+      <div>
+        
+        <h1>Bienvenue au Restaurant cisse</h1>
+        <p>Découvrez nos plats délicieux</p>
+        <a href="#menu" class="btn btn-light">Voir le Menu</a>
+      </div>
+    </section>
+
+    <!-- Section Menu -->
+    <section id="menu" class="container my-5">
+      <h2 class="text-center mb-4">Notre Menu</h2>
+      <div class="row">
+        <div class="col-md-4 menu-item">
+          <img src="img 1.png" alt="Plat 1" />
+          <h4>Plat  Pizza</h4>
+          <p>
+            Une pizza savoureuse à la pâte fine, garnie de sauce tomate maison,
+            de mozzarella fondante, de basilic frais et d'une touche d'huile
+            d'olive extra vierge. 1
+          </p>
+          <p><strong>Prix: 25dt</strong></p>
+        </div>
+        <div class="col-md-4 menu-item">
+          <img src="img 4.png" alt="Plat 2" />
+          <h4>Plat  Burger</h4>
+          <p>
+            Un burger savoureux avec un steak haché de bœuf tendre, garni de
+            fromage fondant, de salade fraîche, de tomates juteuses et d'une
+            sauce maison, le tout dans un pain moelleux légèrement grillé. Un
+            délice incontournable 2
+          </p>
+          <p><strong>Prix: 22dt</strong></p>
+        </div>
+        <div class="col-md-4 menu-item">
+          <img src="img 11.png" alt="Plat 3" />
+          <h4>Plat  poisson</h4>
+          <p>
+            Description du plat Un délicieux poisson grillé, accompagné de
+            tomates fraîches, d'oignons caramélisés, et relevé d'herbes
+            aromatiques pour une explosion de saveurs. 3
+          </p>
+          <p><strong>Prix: 35dt</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section À propos de nous -->
+    <section class="container my-5">
+      <h2 class="text-center mb-4">À propos de nous</h2>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img 12.png" alt="Restaurant" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+          <p>
+            Au cœur de la ville, notre restaurant vous invite à découvrir une
+            cuisine authentique, raffinée et généreuse, mettant en valeur des
+            produits frais et locaux dans une ambiance chaleureuse et
+            conviviale.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="container my-5">
+      <h2 class="text-center mb-4">Contactez-nous</h2>
+
+
+      <form action="#" method="POST">
+        <div class="mb-3">
+          <label for="name" class="form-label">Nom</label>
+          <input type="text" class="form-control" id="name" required />
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" required />
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea
+            class="form-control"
+            id="message"
+            rows="4"
+            required
+          ></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Envoyer</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Restaurant cisse. Tous droits réservés.</p>
+      <div class="social-icons">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+      </div>
+    </footer>
+
+    <!-- Lien vers Bootstrap JS et icônes FontAwesome pour les icônes sociales -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  </body>
+</html>
